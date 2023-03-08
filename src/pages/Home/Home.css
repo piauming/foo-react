@@ -1,3 +1,536 @@
-.container {
-    background-color: yellow;
+ body {
+     font-family: Sans-Serif;
+     /* white-space: pre-line;
+    vertical-align: bottom; */
+     font-weight: 300;
+     padding: 0;
+     margin: 0;
+     /* background-color: aqua; */
+ }
+
+ ul {
+     list-style-type: none;
+     padding: 0;
+     margin: 0;
+ }
+
+ ul li {
+     padding: 0;
+     margin: 0;
+ }
+
+ .banner-container {
+     padding-bottom: 12px;
+     margin-bottom: 10px;
+     background-color: rgb(227, 226, 226);
+ }
+
+ .main-container {
+     position: relative;
+ }
+
+ .social-media-link ul {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     list-style-type: none;
+     padding: 0;
+     margin: 0;
+ }
+
+ .social-media-link ul li {
+     padding: 10px;
+ }
+
+ .asiaone-logo {
+     position: absolute;
+     font-weight: 800;
+     padding: 15px;
+ }
+
+ .about-harley {
+     padding: 20px;
+ }
+
+ .about-asiaone {
+     padding: 20px;
+ }
+
+ .nav {
+     position: fixed;
+     width: 100%;
+     /* height: 300px; */
+     top: 0;
+     left: 0;
+     /* background-color: yellow; */
+     z-index: 99;
+     display: flex;
+     /* align-items: center; */
+     /* justify-content: flex-end; */
+ }
+
+ .nav-button {
+     position: absolute;
+     top: 0;
+     right: 0;
+     background-color: azure;
+     padding: 10px;
+     cursor: pointer;
+     display: flex;
+     align-self: flex-end;
+ }
+
+ .menu {
+     padding-top: 60px;
+     padding-bottom: 120px;
+     width: 100%;
+     display: flex;
+     /* align-items: center; */
+     justify-content: center;
+     background-color: rgba(0, 0, 0, 0.8);
+ }
+
+ /* .menu ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 25px 0px 25px 0px;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: left;
+} */
+
+ li.separator {
+     border-bottom: 0.5px solid rgb(216, 216, 216);
+ }
+
+ li.separator-vertical {
+     border-right: 1px solid white;
+ }
+
+
+ .newline-text {
+     white-space: pre-line;
+     vertical-align: bottom;
+ }
+
+ .intro {
+     padding: 10px 15px 30px 15px;
+     text-transform: none;
+
+     color: #81744f;
+
+     /* color: #a1987d; */
+     /* font-size: 12px; */
+     /* line-height: 14px; */
+     text-align: center;
+     /* font-weight: 600; */
+ }
+
+
+
+ .banner {
+     position: absolute;
+     margin: auto;
+     width: 100%;
+     color: white;
+     height: calc(100% - 10px);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     /* border: 5px solid red; */
+     /* border-bottom: 5px solid #81744f; */
+     /* margin-bottom: 40px; */
+
+
+ }
+
+ .banner-title {
+     font-size: 37px;
+     font-weight: 700;
+     text-transform: uppercase;
+     /* border: 5px solid greenyellow; */
+     padding: 0;
+ }
+
+ .extended-container {
+     position: relative;
+     margin: 0px 0px 0px 0px;
+     /* margin-bottom: 20px; */
+     padding: 0;
+ }
+
+ .about-asiaone .copyright {
+    padding-top: 24px;
+    padding-bottom: 5px;
+    font-size: 11px;
+    color: #FF6D00;
+    font-weight: 600;
 }
+
+.about-asiaone .copyright .registeredTo {
+    color: white;
+}
+
+
+ /* Desktop styles */
+ @media screen and (min-width: 768px) {
+
+    .asiaone-logo img {
+        width: 34px;
+    }
+
+     .section-title {
+         padding: 10px 0px 10px 0px;
+         text-transform: uppercase;
+         color: #867954;
+         font-weight: bold;
+         font-size: 13px;
+         text-align: left;
+     }
+
+     .menu ul {
+         margin: 0;
+         padding: 0;
+         width: 340px;
+     }
+
+     .menu ul li {
+         list-style-type: none;
+         margin: 0;
+         padding: 25px 0px 25px 0px;
+         color: white;
+         font-size: 12px;
+         font-weight: 500;
+         text-align: left;
+     }
+
+     .banner-logo-title {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         padding: 30px;
+         /* border: 5px solid blue; */
+         padding-top: 0;
+     }
+
+     .banner-logo {
+         /* border: 5px solid blue; */
+         width: 77px;
+         padding: 30px;
+         padding-top: 0;
+         padding-bottom: 15px;
+     }
+
+     .container {
+         margin: auto 210px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         /* align-items: center; */
+         padding-bottom: 20px;
+     }
+
+     .image {
+         float: left;
+         padding: 0px 15px 0px 5px;
+         width: 50%;
+         height: auto;
+         /* background-color: antiquewhite; */
+     }
+
+     .text {
+         text-align: justify;
+         font-size: 13px;
+         line-height: 14pt;
+     }
+
+
+
+     .parallax-text {
+         position: absolute;
+         margin: auto;
+         padding: 30px;
+         padding-right: 20%;
+         left: 50%;
+         color: white;
+         /* border: 2px solid blue; */
+         height: calc(100% - 60px);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         font-size: 15px;
+         font-weight: 400;
+     }
+
+     /* .footer-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
+
+     .image-fit {
+         width: 100%;
+         /* border: 2px solid red; */
+     }
+
+     .women-image {
+         width: 100%;
+     }
+
+
+
+     /* Quote */
+     .quote {
+         display: flex;
+         flex-direction: row;
+         width: 85%;
+         padding: 20px;
+     }
+
+     .quote-person-container {
+         align-self: center;
+     }
+
+     .quote-person {
+         width: 86px;
+         /* padding: 5px; */
+     }
+
+     .quote .content {
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .quote .content img {
+         width: 30px;
+         /* height: auto; */
+         align-self: flex-start;
+         padding: 5px;
+     }
+
+     .quote .content .text {
+         text-transform: uppercase;
+         /* font-family: Helvetica, Arial, Sans-Serif; */
+         color: #a1987d;
+         font-size: 10px;
+         line-height: 13px;
+         text-align: left;
+         font-weight: 600;
+     }
+
+     /* About AsiaOne */
+     .about-asiaone {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         background-color: black;
+         color: #FF6D00;
+     }
+
+
+     .about-asiaone img {
+         width: 200px;
+         padding: 20px;
+         padding-top: 20px;
+     }
+
+     .about-asiaone ul {
+         display: flex;
+         /* justify-content: center; */
+         /* align-items: center; */
+     }
+
+     .about-asiaone ul li {
+         font-size: 13px;
+         font-weight: 600;
+         padding: 0px 24px 0px 24px;
+     }
+
+     /* .about-asiaone .copyright {
+         padding-top: 24px;
+         padding-bottom: 5px;
+         font-size: 11px;
+         color: #FF6D00;
+         font-weight: 600;
+     }
+
+     .about-asiaone .copyright .registeredTo {
+         color: white;
+     } */
+ }
+
+ /* Mobile styles */
+ @media screen and (max-width: 767px) {
+
+    .asiaone-logo img {
+        width: 50px;
+    }
+
+     .section-title {
+         padding: 10px 0px 10px 0px;
+         text-transform: uppercase;
+         color: #867954;
+         font-weight: bold;
+         font-size: 21px;
+         text-align: left;
+     }
+
+     .menu ul {
+         margin: 0;
+         padding: 0;
+         width: 380px;
+     }
+
+     .menu ul li {
+         list-style-type: none;
+         margin: 0;
+         padding: 25px 0px 25px 0px;
+         color: white;
+         font-size: 25px;
+         font-weight: 500;
+         text-align: left;
+     }
+
+     .banner-logo-title {
+         position: absolute;
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-end;
+         align-items: center;
+         padding: 30px;
+         /* border: 5px solid blue; */
+         padding-top: 0;
+         top: 50%;
+     }
+
+     .banner-logo {
+         /* border: 5px solid blue; */
+         margin: 0;
+         width: 110px;
+         /* height: 100px; */
+         padding: 30px;
+         /* padding-top: 0; */
+         padding-bottom: 20px;
+     }
+
+     .container {
+         margin: auto 50px;
+         padding-bottom: 20px;
+     }
+
+     .image {
+         width: 100%;
+         height: auto;
+         padding: 0;
+     }
+
+     .text {
+         width: 100%;
+         margin-top: 10px;
+     }
+
+     .image-fit {
+         height: 100vh;
+         width: 100%;
+         object-fit: cover;
+     }
+
+     .women-image {
+         /* position: absolute; */
+         background-position: right 20px top;
+         /* height: 45vh; */
+         width: 100%;
+         /* left: 30px; */
+         /* padding-left: 100px; */
+         object-fit: cover;
+     }
+
+     /* Quote */
+     .quote {
+         display: flex;
+         flex-direction: column;
+     }
+
+     .quote-image {
+         float: left;
+     }
+
+     .quote-person-container {
+         align-self: center;
+     }
+
+     .quote-person {
+         padding: 40px;
+         width: 80%;
+     }
+
+     .quote .content {
+         /* width: 54px; */
+         position: relative;
+         float: left;
+         top: -80px;
+     }
+
+     .quote .content .text {
+         text-transform: uppercase;
+         font-family: Helvetica, Arial, Sans-Serif;
+         color: #857E6B;
+         font-size: 25px;
+         font-weight: 600;
+     }
+
+
+
+     .parallax-text {
+         position: absolute;
+         margin: auto;
+         padding: 80px;
+         padding-right: 15%;
+         /* left: 50%; */
+         color: white;
+         /* border: 2px solid blue; */
+         height: calc(100% - 60px);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         font-size: 30px;
+         line-height: 40px;
+         font-weight: 600;
+     }
+
+ 
+
+     .about-asiaone {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: #FF6D00;
+    }
+
+     .about-asiaone img {
+        width: 200px;
+        padding: 20px;
+        padding-top: 20px;
+    }
+
+     .about-asiaone ul {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .about-asiaone ul li {
+        font-size: 13px;
+        font-weight: 600;
+        padding: 5px;
+    }
+ }
