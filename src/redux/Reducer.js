@@ -1,10 +1,10 @@
 import initialState from './InitialState';
-import { setScrollTo } from './reducers';
+import { addToHistory } from './reducers';
 
 const reducer = (state = initialState, action) => {
     switch(action.type){
-        case 'setScrollTo':
-            return setScrollTo(state, action.payload);
+        case 'addToHistory':
+            return addToHistory(state, action.payload);
         default:
             return;
     }

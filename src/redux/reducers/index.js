@@ -1,1 +1,1 @@
-export { default as setScrollTo } from './SetScrollTo';
+export { default as addToHistory } from './AddToHistory';
