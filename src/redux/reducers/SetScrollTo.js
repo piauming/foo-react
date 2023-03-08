@@ -1,8 +1,9 @@
 import produce from "immer";
 
 const setScrollTo = (state, payload) => {
-    draftState.data["scrollTo"] = payload;
-    return;
+    return produce(state, draftState => {
+        draftState.data["scrollTo"] = payload?.title;
+    });
 }
 
 export default setScrollTo;
