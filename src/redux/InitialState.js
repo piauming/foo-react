@@ -1,5 +1,5 @@
 const initialState = {
-    data: {}
+    history: []
 }
 
 export default initialState;

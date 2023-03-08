@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback, useRef } from "react";
 import { useDispatch } from "react-redux";
 import { throttle } from "lodash";
 
-import { setScrollTo } from '../../redux/actions'
+import { addToHistory } from '../../redux/actions'
 import './Home.css';
 
 import HarleyRiders from "./HarleyRiders";
@@ -36,6 +36,9 @@ const Home = () => {
     );
 
     const scrollToView = (id) => {
+        const payload = { "value": id }
+        dispatch(addToHistory(payload));
+
         switch (id) {
             case "harleyRiders":
                 refHarleyRiders.current?.scrollIntoView({ behavior: 'smooth' });
@@ -62,12 +65,6 @@ const Home = () => {
             window.removeEventListener('resize', resizeHandler)
         }
     }, []);
-
-    const handleClick = (e) => {
-        e.preventDefault();
-        const payload = { "title": "test", }
-        dispatch(setScrollTo(payload));
-    }
 
     return (
         <div>

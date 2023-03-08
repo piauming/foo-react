@@ -12,7 +12,7 @@ export const store = configureStore({
 
 store.subscribe(throttle (() => {
     saveState({
-        data: store.getState().data
+        history: store.getState().history
     });
 }, 1000));
 
